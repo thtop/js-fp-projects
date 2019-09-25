@@ -89,9 +89,9 @@ function tableView(dispatch, meals) {
   ]);
 }
 
-function fieldSet(labelName, inputValue, oninput) {
+function fieldSet(labelText, inputValue, oninput) {
   return div([
-    label({ className: 'db mb1' }, labelName),
+    label({ className: 'db mb1' }, labelText),
     input({
       className: 'pa2 input-reset ba w-100 mb2',
       type: 'text',
