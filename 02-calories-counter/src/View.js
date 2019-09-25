@@ -89,9 +89,9 @@ function tableView(dispatch, meals) {
   ]);
 }
 
-function fieldSet(lableName, inputValue, oninput) {
+function fieldSet(labelName, inputValue, oninput) {
   return div([
-    label({ className: 'db mb1' }, lableName),
+    label({ className: 'db mb1' }, labelName),
     input({
       className: 'pa2 input-reset ba w-100 mb2',
       type: 'text',
@@ -116,7 +116,7 @@ function buttonSet(dispatch) {
     ),
     button(
       {
-        className: 'f3 pv2 ph3 bg-light-gray bn dim mr2',
+        className: 'f3 pv2 ph3 bg-light-gray bn dim',
         type: 'button',
         onclick: () => dispatch(showFormMsg(false))
       },
