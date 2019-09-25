@@ -1,27 +1,27 @@
 const MSGS = {
-    ADD: 'ADD',
-    SUBTRACT: 'SUBTRACT'
-}
+  ADD: 'ADD',
+  SUBTRACT: 'SUBTRACT'
+};
 
 export const addMsg = {
-    type: MSGS.ADD
+  type: MSGS.ADD
 };
 
 export const subtractMsg = {
-    type: MSGS.SUBTRACT
-}
+  type: MSGS.SUBTRACT
+};
 
 function update(msg, model) {
-    switch (msg.type) {
-        case MSGS.ADD: {
-            return model + 1;
-        }
-        case MSGS.SUBTRACT: {
-            return model - 1;
-        }
-        default:
-            return model;
+  switch (msg.type) {
+    case MSGS.ADD: {
+      return model + 1;
     }
+    case MSGS.SUBTRACT: {
+      return model - 1;
+    }
+    default:
+      return model;
+  }
 }
 
 export default update;
