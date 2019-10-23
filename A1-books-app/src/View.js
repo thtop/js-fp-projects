@@ -37,7 +37,7 @@ function bookRow(dispatch, className, book) {
 
 function totalRow(books) {
     const total = R.pipe(
-        R.map(meal => meal.price),
+        R.map(book => book.price),
         R.sum
     )(books);
 
