@@ -24,7 +24,7 @@ function update(msg, model) {
         case DELETE_BOOK: {
             const { id } = msg;
             const books = R.filter(book => book.id !== id, model.books);
-            return { ...model, books }
+            return { ...model, books, title: '', price: 0, showForm: false }
         }
         case EDIT_BOOK: {
             const { editId } = msg;
